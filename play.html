@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="script" href="js/bootstrap.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a id="home" href="./index.html">Home</a></li>
+            <li class="breadcrumb-item"><p style="width: 100px;color: azure;">重庆介绍</p></li>
+        </ol>
+    </nav>
+    <table align="center" bgcolor=white>
+        <tr>
+            <td colspan="3"><img src="./img/c1.jpg" width="100%" height="400px"></td>
+        </tr>
+        <tr>
+            <td colspan="3" id="mTitle">
+                <a href="#">首页</a>
+                <a href="#">走进重庆</a>
+                <a href="#">吃在重庆</a>
+                <a href="#">路线选择</a>
+                <a href="#">特色线路</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td id="mWeather">
+                            <p>天气查询</p>
+                            重庆 晴转阴25℃-35℃<br />
+                            渝中区 阵雨转多云25℃-32℃<br />
+                            江津区 多云转阴20℃-28℃<br />
+                            北碚区 阵雨转阴21℃-28℃<br />
+                            武隆区 雷阵雨26℃-30℃
+                        </td>
+                    </tr>
+                    <tr class="mBg">
+                        <td class="mIcon">今日推荐</td>
+                    </tr>
+                    <tr class="mTui">
+                        <td><img src="./img/c2.jpg" width="200px" height="100px"></br>洪崖洞</td>
+                    </tr>
+                    <tr class="mTui">
+                        <td><img src="./img/c3.jpg" width="200px" height="100px"></br>朝天门</td>
+                    </tr>
+                    <tr class="mTui">
+                        <td><img src="./img/c4.jpg" width="200px" height="100px"></br>仙女山</td>
+                    </tr>
+
+                </table>
+            </td>
+            <td id="mCenter">
+                <table align="center">
+                    <tr>
+                        <td><img src="./img/c5.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>旅游线路推荐</td>
+                    </tr>
+                    <tr>
+                        <td id="mLine">
+                            <img src="./img/icon1.png" width="20px" height="20px"> 磁器口古镇 →白公馆 →渣滓洞 →长江索道 →南山一棵树观景园</br>
+                            <img src="./img/icon1.png" width="20px" height="20px"> 解放碑(2小时) → 洪崖洞民俗风貌区(1.5小时) →
+                            千厮门大桥(30分钟) → 八一路好吃街(1小时)</br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td id="mRight">
+                <table>
+                    <tr class="mBg">
+                        <td class="mIcon">重庆地图</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/d1.jpg" width="300px" height="200px"></td>
+                    </tr>
+                    <tr class="mBg">
+                        <td class="mIcon">特色美食</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>重庆火锅</li>
+                                <li>重庆小面</li>
+                                <li>重庆香肠</li>
+                                <li>麻辣香锅</li>
+                                <li>重庆鸡公煲</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" id="mBottom">
+                contact me<img src="./img/icon2.png" width="30px" height="20px"><span>onismyeh@gmail.com</span></td>
+        </tr>
+    </table>
+</body>
+
+<style>
+    #mTitle {
+        background: url(./img/chongqing.jpg) repeat-x;
+        height: 28px;
+        border-bottom: 1px solid #A56AFF;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    a {
+        text-decoration: none;
+        padding-left: 12px;
+    }
+
+    #mWeather {
+        background-color: #5EA6EB;
+        line-height: 23px;
+        font-size: 16px;
+    }
+
+    #mWeather p {
+        background: url(xinjiang/weather.jpg) no-repeat;
+        background-size: 200px 41px;
+        line-height: 40px;
+        font-size: 25px;
+        padding-left: 65px;
+        margin: 0px;
+    }
+
+    .mTui {
+        background-color: #5EA6EB;
+        text-align: center;
+    }
+
+    .mIcon {
+        padding-left: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mImg {
+        padding-left: 11px;
+    }
+
+    #mLine {
+        line-height: 25px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        background-color: #5EA6EB;
+    }
+
+    ul li {
+        padding-left: 10px;
+        line-height: 26px;
+        border-bottom: 1px dashed;
+    }
+
+    #mBottom {
+        background-color: #5EA6EB;
+        text-align: center;
+        border-top: 1px solid #A56AFF;
+    }
+
+    #mBottom span {
+        color: white;
+
+    }
+
+    #mCenter {
+        border-left: 1px solid #A56AFF;
+        width: 410px;
+        background-color: beige;
+    }
+
+    #mRight {
+        border-left: 1px solid #A56AFF;
+        width: 150px;
+        background-color: bisque;
+    }
+</style>
+
+</html>

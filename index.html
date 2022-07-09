@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="script" href="js/bootstrap.js">
+    <title>MySpace</title>
+</head>
+
+<body>
+    <nav title="这里也很精彩" class="Header" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <button type="button" onclick=javacript:showreport() id="Myreport">点击一下</button>
+    </nav>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="https://s2.loli.net/2022/07/08/MXgLCjkW6wcvSDm.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">疾风剑豪</h5>
+                    <p class="card-text">长路漫漫，且随疾风前行，身后亦须留心。</p>
+                    <a href="./yasuo.html" class="btn">剑豪世界</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/c2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">避暑胜地——重庆</h5>
+                    <a href="./play.html" class="btn">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://s2.loli.net/2022/07/09/qQg2G5fINp7id1l.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Maybe it's ok!</h5>
+                    <p class="card-text"></p>
+                    <a href="./try.html" class="btn">尝试点击它进入相应界面</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://s2.loli.net/2022/07/09/toFJRaXTmGzELup.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">完成它有点困难，使用MarkDown完成后转化为HTML</h5>
+                    <a href="./myReport.html" class="btn">结业报告</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <audio src="./music/Legends Never Die.mp3" autoplay></audio> -->
+</body>
+<style>
+    * {
+        margin: 0px;
+        /*设置四周边距都为0*/
+        box-sizing: border-box;
+        /*宽高的设置值包括border等*/
+    }
+
+    body {
+        background: url("./img/bg-content.jpg");
+        background-position: 100%;
+    }
+
+    .row {
+        margin-left: 100px;
+    }
+
+
+    .Header {
+        width: 100%;
+        z-index: 50;
+        background: #f25c27;
+    }
+
+    .Header:hover {
+        box-shadow: 0 0 10px 0 rgb(231, 250, 139);
+    }
+
+    .Header #Myreport {
+        width: 100%;
+        height: 40px;
+        /* border-radius: 15px; */
+        margin-left: 0;
+        /* margin-top: 20px; */
+        background-color: rgba(52, 158, 190, 0.301);
+        text-align: center;
+        border: none;
+    }
+
+    .card-img-top{
+        height: 250px;
+    }
+
+    .card {
+        float: left;
+        width: 400px;
+        height: 400px;
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-right: 0px;
+        background-color: rgb(78, 50, 41);
+    }
+
+    .card:hover {
+        box-shadow: 5px 5px 5px 5px rgba(189, 196, 60, 0.25);
+        border-color: #eee;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 20px;
+        background-color: aqua;
+    }
+</style>
+<script>
+    function showreport() {
+        window.location.href = "./try.html"
+    }
+</script>
+
+</html>
